@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#cabezera{
+    top: 0;
+    background-color: #f6dfc7;
+    display: flex;
+    width: 100%;
+    border-bottom:solid black 3px ;
+}
+
+#titulo_0{
+    transition: all 0.5s ease; 
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    font-size: 70px;
+    color:rgb(92, 68, 68);
+    display: inline-block;     
+    border-radius: 5px;
+    box-shadow: none;           
+    padding: 10px;  
+    text-decoration: none;
+    font-family: none;
+}
+
+#titulo_0:hover{
+    color: rgb(12, 12, 11);           
+    transform: rotate(5deg);    
+    box-shadow: 0 0 15px #110906; 
+}
+
+nav{
+    color:rgb(8, 8, 8);
+    margin-left: auto;
+}
+
+a{
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent; 
+    display: inline-block;
+    font-size:30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 40px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+#test:hover{
+    color: white;
+    font-size:38px;
+    border-color: black; 
+}
+
+#consejos:hover{
+    color: white;
+    font-size:38px;
+    border-color: black; 
+}
+
+#seccion:hover{
+    color: white;
+    font-size:38px;
+    border-color: black; 
+}
+
+#titulo{
+    font-family: 'Pixelify Sans', cursive;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+#cansancio{
+    background-color: #C98860;
+    text-align: left;
+    padding: 30px;
+    color: white;
+}
+
+#desper{
+    background-color: #A4BFA7;
+    text-align: left;
+    padding: 30px;
+    color:white;
+}
+
+#realizacion_per{
+    background-color: #F8E4C0;
+    text-align: right;
+    padding: 30px;
+    color:black;
+}
+
+h1{
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Young Serif', serif;
+}
+
+h2{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.info{
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+@media (max-width:900px)
+{
+    #cabezera{
+        top: 0;
+        background-color: #f6dfc7;
+        display: flex;
+        width: 100%;
+        border-bottom:solid black 3px ;
+    }
+    
+    #titulo_0{
+        background-color: #f6dfc7;
+        transition: all 0.5s ease;
+        
+            font-size: 5vw; 
+            margin-top: 2vh; 
+            margin-bottom: 2vh; 
+            margin-left: 5vw; 
+            color:rgb(92, 68, 68);
+            display: inline-block;     
+            border-radius: 5px;
+            box-shadow: none;           
+            padding: 10px;  
+            text-decoration: none;
+            font-family: none;
+    }
+    
+    #titulo_0:hover{
+        color: rgb(12, 12, 11);           
+        transform: rotate(5deg);    
+        box-shadow: 0 0 15px #110906; 
+    }
+    
+    a{
+        background-color: #f6dfc7;
+        transition: all 0.3s ease;
+        border-bottom: 2px solid transparent; 
+        display: inline-block;
+        font-size: 2vw; 
+        padding-right: 1.5vw; 
+        padding-left: 1.5vw; 
+        padding-top: 4vh; 
+        text-decoration: none;
+        color: black;
+        font-family: 'Rubik', sans-serif;
+    }
+    
+    #test:hover{
+        color: white;
+        font-size:5vw;
+        border-color: black; 
+    }
+    
+    #consejos:hover{
+        color: white;
+        font-size:5vw;
+        border-color: black; 
+    }
+    
+    #seccion:hover{
+        color: white;
+        font-size:5vw;
+        border-color: black; 
+    }
+    
+    #titulo{
+        font-family: 'Pixelify Sans', cursive;
+        margin-top: 7%;
+        margin-bottom: 7%;
+        font-size: 7vw;
+        padding-bottom: 2%;
+        text-align: center;
+    }
+   
+    #cansancio{
+        background-color: #C98860;
+        text-align: left;
+        padding:4%;
+        color: white;
+    }
+    
+    #desper{
+        background-color: #A4BFA7;
+        text-align: left;
+        padding: 3%;
+        color:white;
+    }
+    
+    #realizacion_per{
+        background-color: #F8E4C0;
+        text-align: right;
+        padding: 4%;
+        color:black;
+    }
+    
+    h1{
+        font-size: 6vw;
+        margin-top: 1%;
+        margin-bottom: 3%;
+        font-family: 'Young Serif', serif;
+    }
+    
+    h2{
+        font-size: 4vw;
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+    .info{
+        font-size: 3vw;
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
+    
+
+    
+}

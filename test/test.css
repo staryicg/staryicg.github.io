@@ -1,0 +1,428 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#cabezera{
+    top: 0;
+    background-color: #f6dfc7;
+    display: flex;
+    width: 100%;
+    border-bottom:solid black 3px ;
+}
+
+#name{
+    transition: all 0.5s ease; 
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    font-size: 70px;
+    color:rgb(92, 68, 68);
+    display: inline-block;     
+    border-radius: 5px;
+    box-shadow: none;           
+    padding: 10px;  
+    text-decoration: none;
+    font-family: none;
+}
+
+#name:hover{
+    color: rgb(12, 12, 11);           
+    transform: rotate(5deg);    
+    box-shadow: 0 0 15px #110906; 
+}
+
+nav{
+    color:black;
+    text-decoration: none;
+    margin-left: auto;
+}
+
+a{
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent; 
+    display: inline-block;
+    font-size:30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 40px;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+}
+
+#test:hover{
+    color: white;
+    font-size:38px;
+    border-color: black; 
+}
+
+#consejos:hover{
+    color: white;
+    font-size:38px;
+    border-color: black; 
+}
+
+#seccion:hover{
+    color: white;
+    font-size:38px;
+    border-color: black; 
+}
+
+#titulo{
+    padding-top: 30px;
+    font-size: 40px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: 'Pixelify Sans', cursive;
+}
+
+body{
+    background-color: #EEEEEE;
+}
+
+#explicación{
+    font-family: 'Balsamiq Sans', cursive;
+    text-align:center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+
+.colortest1{
+    z-index: 10;
+    position: relative;
+    max-width: 65%;
+    border-radius: 7px;
+    padding: 10px;
+    margin: auto;
+    border: 4px solid rebeccapurple;
+}
+
+.colortest2{
+    z-index: 10;
+    position: relative;
+    max-width: 65%;
+    border-radius: 7px;
+    padding: 10px;
+    margin: auto;
+    border: 4px solid rgb(60, 196, 56);
+}
+
+.colortest3{
+    z-index: 10;
+    position: relative;
+    max-width: 65%;
+    border-radius: 7px;
+    padding: 10px;
+    margin: auto;
+    border: 4px solid rgb(218, 46, 3);
+}
+
+h2{
+   padding-bottom: 10px;    
+}
+
+label{
+    font-family: 'Balsamiq Sans', cursive;
+    display: block;
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px dashed #ccd1d1;
+    margin-bottom: 3px;
+}
+
+.label1:hover{
+    background: #e09adb;
+}
+
+.label2:hover{
+    background: #4bdf7d;
+}
+
+.label3:hover{
+    background: #f56d4c;
+}
+
+#conteCarrusel{
+    height: 450px;
+    overflow: hidden;
+}
+
+.itemCarrusel{
+    height: 500px;
+    position: relative;
+}
+
+.tarjetacarrusel{
+    height: 100%;
+}
+
+.flechascarrusel{
+    position:absolute;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items:normal;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+a{
+    text-decoration: none;
+}
+
+i{
+    color:rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+#button {
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 20px;
+    width: 15%;
+    display: block;
+    margin-left: auto;
+    padding: 7px;
+    background-color: #050c0c;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 2px solid black; 
+    transition: background-color 0.4s, color 0.4s; 
+}
+
+#button:hover {
+    background-color: rgb(241, 241, 233);
+    color: black;
+    border: 2px solid black; 
+}
+
+.res{
+    font: size 30px;
+    color: red;
+}
+
+@media (max-width: 900px)
+{
+    #cabezera{
+        top: 0;
+        background-color: #f6dfc7;
+        display: flex;
+        width: 100%;
+        border-bottom:solid black 3px ;
+    }
+    
+    #name{
+        transition: all 0.5s ease; 
+        margin-top: 4%;
+        margin-bottom: 4%;
+        margin-left: 5%;
+        font-size: 5vw;
+        color:rgb(92, 68, 68);
+        display: inline-block;     
+        border-radius: 8px;
+        box-shadow: none;           
+        padding: 1%;  
+        text-decoration: none;
+        font-family: none;
+    }
+    
+    #name:hover{
+        color: rgb(12, 12, 11);           
+        transform: rotate(5deg);    
+        box-shadow: 0 0 15px #110906; 
+    }
+    
+    nav{
+        color:black;
+        text-decoration: none;
+        margin-left: auto;
+    }
+    
+    a{
+        transition: all 0.3s ease;
+        border-bottom: 2px solid transparent; 
+        display: inline-block;
+        font-size:2vw;
+        padding-right: 1.5vw;
+        padding-left: 1.5vw;
+        padding-top: 4vh;
+        color: black;
+        font-family: 'Rubik', sans-serif;
+    }
+    
+    #test:hover{
+        color: white;
+        font-size:38px;
+        border-color: black; 
+    }
+    
+    #consejos:hover{
+        color: white;
+        font-size:38px;
+        border-color: black; 
+    }
+    
+    #seccion:hover{
+        color: white;
+        font-size:38px;
+        border-color: black; 
+    }
+    
+    #titulo{
+        padding-top: 7%;
+        font-size: 5vw;
+        padding-bottom: 3%;
+        text-align: center;
+        font-family: 'Pixelify Sans', cursive;
+    }
+    
+    body{
+        background-color: #EEEEEE;
+    }
+    
+    #explicación{
+        font-family: 'Balsamiq Sans', cursive;
+        text-align:center;
+        padding-top: 2%;
+        padding-bottom: 7%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    
+    .colortest1{
+        z-index: 10;
+        position: relative;
+        max-width: 65%;
+        border-radius: 7px;
+        padding: 10px;
+        margin: auto;
+        border: 4px solid rebeccapurple;
+    }
+    
+    .colortest2{
+        z-index: 10;
+        position: relative;
+        max-width: 65%;
+        border-radius: 7px;
+        padding: 10px;
+        margin: auto;
+        border: 4px solid rgb(60, 196, 56);
+    }
+    
+    .colortest3{
+        z-index: 10;
+        position: relative;
+        max-width: 65%;
+        border-radius: 7px;
+        padding: 10px;
+        margin: auto;
+        border: 4px solid rgb(218, 46, 3);
+    }
+    
+    h2{
+       padding-bottom: 2%;
+       font-size: 4vw;    
+    }
+    
+    label{
+        font-family: 'Balsamiq Sans', cursive;
+        font-size: 4vw;
+        display: block;
+        padding: 10px;
+        border-radius: 7px;
+        cursor: pointer;
+        border: 1px dashed #ccd1d1;
+        margin-bottom: 3px;
+    }
+    
+    .label1:hover{
+        background: #e09adb;
+    }
+    
+    .label2:hover{
+        background: #4bdf7d;
+    }
+    
+    .label3:hover{
+        background: #f56d4c;
+    }
+    
+    #conteCarrusel{
+        height: 450px;
+        overflow: hidden;
+    }
+    
+    .itemCarrusel{
+        height: 500px;
+        position: relative;
+    }
+    
+    .tarjetacarrusel{
+        height: 100%;
+    }
+    
+    .flechascarrusel{
+        position:absolute;
+        height: 100%;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items:normal;
+        justify-content: space-between;
+        padding: 7%;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    i{
+        color:rgb(0, 0, 0);
+        font-size: 30px;
+    }
+    
+    #button {
+        text-align: center;
+        font-family: 'Balsamiq Sans', cursive;
+        font-size: 2vw;
+        width: 15%;
+        display: block;
+        margin-left: auto;
+        padding: 1%;
+        background-color: #050c0c;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-right: 10px;
+        border: 2px solid black; 
+        transition: background-color 0.4s, color 0.4s; 
+    }
+    
+    #button:hover {
+        background-color: rgb(241, 241, 233);
+        color: black;
+        border: 2px solid black; 
+    }
+    
+    .res{
+        font: size 20%;
+        color: red;
+    }
+
+    
+}

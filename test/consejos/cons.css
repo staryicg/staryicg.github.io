@@ -1,0 +1,317 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    background-color: #f6dfc7;
+    display: flex;
+    width: 100%;
+    z-index: 1000;
+    border-bottom:solid black 3px ;
+}
+
+#titulo{
+    transition: all 0.5s ease; 
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    font-size: 70px;
+    color:rgb(92, 68, 68);
+    display: inline-block;     
+    border-radius: 5px;
+    box-shadow: none;           
+    padding: 10px;  
+    text-decoration: none;
+    font-family: none;
+}
+
+#titulo:hover{
+    color: rgb(12, 12, 11);           
+    transform: rotate(5deg);    
+    box-shadow: 0 0 15px #110906; 
+}
+
+body{
+    background-color: #EEEEEE;
+}
+
+nav{
+    color:rgb(8, 8, 8);
+    text-decoration: none;
+    margin-left: auto;
+}
+
+a{
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent; 
+    display: inline-block;
+    font-size:30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 40px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+}
+
+#test:hover{
+    color: white;
+    font-size:38px;
+    border-color: black; 
+}
+
+#consejos:hover{
+    color: white;
+    font-size:38px;
+    border-color: black; 
+}
+
+#seccion:hover{
+    color: white;
+    font-size:38px;
+    border-color: black; 
+}
+
+#cuerpo1{
+    margin-top: 150px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #C98860;
+    color:white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    font-family: 'Young Serif', serif;
+}
+
+#cuerpo2{
+    margin-top: 15px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #F8E4C0;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    font-family: 'Young Serif', serif;
+}
+
+#cuerpo3{
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #A4BFA7;
+    color:white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    font-family: 'Young Serif', serif;
+}
+
+.espacio{
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-bottom: 3px solid black;
+}
+
+h2{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 5px;
+    padding-top: 30px;
+}
+
+h3{
+    font-size: 30px;
+    margin-left: 25px;
+}
+
+p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 35px;
+    font-size: 20px;
+}
+
+.black{
+    border-bottom: 2px solid black;
+    margin-right: 1000px;
+}
+
+.white{
+    border-bottom: 2px solid white;
+    margin-right: 1080px;
+}
+
+.abajo{
+    padding-bottom: 45px;
+}
+@media (max-width:900px) 
+{
+    header{
+        position: fixed;
+        top: 0;
+        background-color: #f6dfc7;
+        display: flex;
+        width: 100%;
+        z-index: 1000;
+        border-bottom:solid black 3px ;
+    }
+    
+    #titulo{
+        background-color: #f6dfc7;
+        transition: all 0.5s ease;
+        
+            font-size: 5vw; 
+            margin-top: 2vh; 
+            margin-bottom: 2vh; 
+            margin-left: 5vw; 
+            color:rgb(92, 68, 68);
+            display: inline-block;     
+            border-radius: 5px;
+            box-shadow: none;           
+            padding: 10px;  
+            text-decoration: none;
+            font-family: none;
+    }
+    
+    #titulo:hover{
+        color: rgb(12, 12, 11);           
+        transform: rotate(5deg);    
+        box-shadow: 0 0 15px #110906;
+        
+    }
+    
+    body{
+        background-color: #EEEEEE;
+    }
+    
+    nav{
+        background-color: #f6dfc7;
+        color: rgb(8, 8, 8);
+        text-decoration: none;
+        margin-left: auto;
+    }
+    
+    a{
+        background-color: #f6dfc7;
+        transition: all 0.3s ease;
+        border-bottom: 2px solid transparent; 
+        display: inline-block;
+        font-size: 2vw; 
+        padding-right: 1.5vw; 
+        padding-left: 1.5vw; 
+        padding-top: 4vh; 
+        text-decoration: none;
+        color: black;
+        font-family: 'Rubik', sans-serif;
+    }
+    
+    #test:hover{
+        color: white;
+        font-size:38px;
+        border-color: black; 
+    }
+    
+    #consejos:hover{
+        color: white;
+        font-size:38px;
+        border-color: black; 
+    }
+    
+    #seccion:hover{
+        color: white;
+        font-size:38px;
+        border-color: black; 
+    }
+    
+    #cuerpo1{
+        margin-top: 35%;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 2%;
+        border-radius: 10px;
+        background-color: #C98860;
+        color:white;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+        font-family: 'Young Serif', serif;
+    }
+    #cuerpo1 h2{
+        font-size: 6vw;
+    }
+    #cuerpo1 h3{
+        font-size: 4vw;
+    }
+    #cuerpo1 p{
+        font-size: 3vw;
+    }
+    
+    #cuerpo2{
+        margin-top: 2%;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-bottom: 2%;
+        border-radius: 10px;
+        background-color: #F8E4C0;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+        font-family: 'Young Serif', serif;
+    }
+    #cuerpo2 h2{
+        font-size: 6vw;
+    }
+    #cuerpo2 h3{
+        font-size: 4vw;
+    }
+    #cuerpo2 p{
+        font-size: 3vw;
+    }
+    
+    #cuerpo3{
+        margin-top: 2%;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 7%;
+        border-radius: 10px;
+        background-color: #A4BFA7;
+        color:white;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+        font-family: 'Young Serif', serif;
+    }
+    #cuerpo3 h2{
+        font-size: 6vw;
+    }
+    #cuerpo3 h3{
+        font-size: 4vw;
+    }
+    #cuerpo3 p{
+        font-size: 3vw;
+    }
+    
+    .espacio{
+        margin-top:4%;
+        margin-bottom: 4%;
+        margin-left: 2%;
+        margin-right: 2%;
+        border-bottom: 3px solid black;
+    }
+    
+    
+    
+    .black{
+        border-bottom: 1px solid black;
+        margin-right: 15%;
+    }
+    
+    .white{
+        border-bottom: 1px solid white;
+        margin-right: 15%;
+    }
+    
+    .abajo{
+        padding-bottom: 10%;
+    } 
+}

@@ -1,0 +1,315 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #F2D3B1;
+}
+
+
+#inicio{
+    background-color: #f6dfc7;
+    display: flex;
+    width: 100%;
+    border-bottom:solid black 3px ;
+}
+
+#titulo_0{
+    background-color: #f6dfc7;
+    transition: all 0.5s ease; 
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    font-size: 70px;
+    color:rgb(92, 68, 68);
+    display: inline-block;     
+    border-radius: 5px;
+    box-shadow: none;           
+    padding: 10px;  
+    text-decoration: none;
+    font-family: none;
+}
+
+#titulo_0:hover{
+    color: rgb(12, 12, 11);           
+    transform: rotate(5deg);    
+    box-shadow: 0 0 15px #110906; 
+}
+
+
+nav{
+    background-color: #f6dfc7;
+    color:rgb(8, 8, 8);
+    text-decoration: none;
+    margin-left: auto;
+}
+
+a{
+    background-color: #f6dfc7;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent; 
+    display: inline-block;
+    font-size:30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 40px;
+    text-decoration: none;
+    color:black;
+    font-family: 'Rubik', sans-serif;
+}
+
+#test:hover{
+    color: white;
+    font-size:38px;
+    border-color: black; 
+}
+
+#consejos:hover{
+    color: white;
+    font-size:38px;
+    border-color: black; 
+}
+
+#seccion:hover{
+    color: white;
+    font-size:38px;
+    border-color: black; 
+}
+
+#button {
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 20px;
+    width: 15%;
+    display: block;
+    margin-left: auto;
+    padding: 3px;
+    background-color: #050c0c;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 2px solid black; 
+    transition: background-color 0.4s, color 0.4s; 
+}
+
+#button:hover {
+    background-color: rgb(241, 241, 233);
+    color: black;
+    border: 2px solid black; 
+}
+
+#titulo{
+    letter-spacing: 2px;
+    padding-top: 20px;
+    font-size: 50px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+#explicación{
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 20px;
+    text-align:center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+#listadealimentos{
+    background-color:#a4bfa7;
+    list-style:circle;
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+#alimentos{
+    background-color: beige;
+    list-style:circle;
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 120px;
+    padding-right: 120px;
+    
+}
+#imgalimentos{
+    padding: 50px 0;
+}
+#imgalimentos h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Young Serif', serif;
+}
+#imgalimentos .fila{
+    display: inline;
+    margin: auto;
+}
+#imgalimentos .fila .item img{
+    width: 150px;
+    height: 150px;
+}
+#imgalimentos .fila .item{
+    display: flex;
+    align-items: center;
+    margin: 20px 10px;
+    padding: 5px;
+    font-family: 'Young Serif', serif;
+}
+#imgalimentos .fila .item :hover{
+    background-color:burlywood;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+} 
+#imgalimentos .fila .item .info{
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+
+
+
+@media (max-width:900px) {
+    #inicio {
+        background-color: #f6dfc7;
+        display: flex;
+        width: 100%;
+        border-bottom:solid black 3px ;
+
+    }
+    #titulo_0{
+        background-color: #f6dfc7;
+        transition: all 0.5s ease;
+        
+            font-size: 5vw; 
+            margin-top: 2vh; 
+            margin-bottom: 2vh; 
+            margin-left: 5vw; 
+            color:rgb(92, 68, 68);
+            display: inline-block;     
+            border-radius: 5px;
+            box-shadow: none;           
+            padding: 10px;  
+            text-decoration: none;
+            font-family: none;
+    }
+    #titulo_0:hover{
+        color: rgb(12, 12, 11);           
+        transform: rotate(5deg);    
+        box-shadow: 0 0 15px #110906; 
+    }
+    #nav {
+        background-color: #f6dfc7;
+        color: rgb(8, 8, 8);
+        text-decoration: none;
+        margin-left: auto;
+    }
+   
+a {
+    background-color: #f6dfc7;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent; 
+    display: inline-block;
+    font-size: 2vw; 
+    padding-right: 1.5vw; 
+    padding-left: 1.5vw; 
+    padding-top: 4vh; 
+    text-decoration: none;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+}
+#test:hover{
+    color: white;
+    font-size:38px;
+    border-color: black; 
+}
+
+#consejos:hover{
+    color: white;
+    font-size:38px;
+    border-color: black; 
+}
+
+#seccion:hover{
+    color: white;
+    font-size:38px;
+    border-color: black; 
+}
+#button {
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 2vw; 
+    width: 15%;
+    display: block;
+    margin-right: 20px;
+    padding: 1vw; 
+    background-color: #050c0c;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 1vw; 
+    border: 2px solid black;
+    transition: background-color 0.4s, color 0.4s;
+}
+#titulo {
+    letter-spacing: 0.05em; 
+    padding-top: 1vh; 
+    font-size: 5vw; 
+    padding-bottom: 1vh; 
+    text-align: center;
+}
+#explicación {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 4vw; 
+    text-align: center;
+    padding-top: 2vh; 
+    padding-bottom: 4vh; 
+    padding-left: 5vw;
+    padding-right: 5vw; 
+}
+#listadealimentos {
+    background-color: #a4bfa7;
+    list-style: circle;
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: left;
+    padding-top: 1vh; 
+    padding-bottom: 4vh; 
+    padding-left: 12vw; 
+    padding-right: 12vw; 
+}
+#alimentos {
+    background-color: beige;
+    list-style: circle;
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: left;
+    padding-top: 1vh; 
+    padding-bottom: 4vh; 
+    padding-left: 12vw; 
+    padding-right: 12vw; 
+}
+#imgalimentos {
+    padding: 7vw 0; 
+}
+#imgalimentos h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 5vw; 
+    font-family: 'Young Serif', serif;
+}
+#imgalimentos .fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#imgalimentos .fila .item .info {
+    margin-left: 4vw; 
+    font-size: 3vw; 
+}
+    
+}

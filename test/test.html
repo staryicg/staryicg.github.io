@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test</title>
+        <link rel="stylesheet" href="test.css">
+        <script src="test.js"></script>
+        <script src="https://kit.fontawesome.com/fff0600dad.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@500&family=Open+Sans:wght@300&family=Pixelify+Sans:wght@400;500&family=Roboto:ital,wght@0,100;1,300;1,700;1,900&family=Young+Serif&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="cabezera">
+            <a id="name" href="/index.html">WorkPeace</a>
+            <nav>
+                <a id="test">Test</a>
+                <a>|</a>
+                <a id="consejos" href="/test/consejos/cons.html">Consejos</a>
+                <a>|</a>
+                <a id="seccion" href="/test/nutricion/nutricion.html">Sección nutritiva</a>
+            </nav>
+        </header>
+    
+        <div>
+            <header>
+                <h2 id="titulo">Test de Estrés Laboral</h2>
+            </header>
+            <p id="explicación">En este test veremos una lista de eventos relacionados con el trabajo.
+                Indique aproximadamente en cada evento el grado de estrés que le genera. Donde usted podra elegir con que frecuncia 
+                le sucede.
+            </p>
+        </div>
+        <div id="conteCarrusel">
+            <div class="itemCarrusel" id="itemCarrusel-1">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-1">
+                    <section class="colortest1" id="p1"> 
+                        <h2>1. Me siento emocionalmente agotado por mi trabajo</h2>
+                            <label class="label1">
+                                <input type="radio" value="0" name="p1" onclick="respuesta_emocional(1,this)"> Nunca 
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="1" name="p1" onclick="respuesta_emocional(1,this)"> Pocas veces
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="2" name="p1" onclick="respuesta_emocional(1,this)"> Una vez al mes o menos 
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="3" name="p1" onclick="respuesta_emocional(1,this)"> Algunas veces al mes
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="4" name="p1" onclick="respuesta_emocional(1,this)"> Una vez a la semana
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="5" name="p1" onclick="respuesta_emocional(1,this)"> Muchas veces
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="6" name="p1" onclick="respuesta_emocional(1,this)"> Todos los dias
+                            </label>
+                    </section>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#itemCarrusel-5">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#itemCarrusel-2">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-2">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-2">
+                    <section class="colortest2" id="p2"> 
+                        <h2>2.  Cuando termino mi jornada de trabajo me siento vacio</h2>
+                            <label class="label2">
+                                <input type="radio" value="0" name="p2" onclick="respuesta_emocional(2,this)"> Nunca
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="1" name="p2" onclick="respuesta_emocional(2,this)"> Pocas veces
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="2" name="p2" onclick="respuesta_emocional(2,this)"> Una vez al mes o menos 
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="3" name="p2" onclick="respuesta_emocional(2,this)"> Algunas veces al mes
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="4" name="p2" onclick="respuesta_emocional(2,this)"> Una vez a la semana
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="5" name="p2" onclick="respuesta_emocional(2,this)"> Muchas veces
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="6" name="p2" onclick="respuesta_emocional(2,this)"> Todos los dias
+                            </label>
+                    </section>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#itemCarrusel-1">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#itemCarrusel-3">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-3">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-3">
+                    <section class="colortest3" id="p3"> 
+                        <h2>3.  Cuando me levanto por la mañana y me enfrento a otra jornada de trabajo me siento fatigado</h2>
+                            <label class="label3">
+                                <input type="radio" value="0" name="p3" onclick="respuesta_emocional(3,this)"> Nunca 
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="1" name="p3" onclick="respuesta_emocional(3,this)"> Pocas veces
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="2" name="p3" onclick="respuesta_emocional(3,this)"> Una vez al mes o menos
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="3" name="p3" onclick="respuesta_emocional(3,this)"> Algunas veces al mes
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="4" name="p3" onclick="respuesta_emocional(3,this)"> Una vez a la semana
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="5" name="p3" onclick="respuesta_emocional(3,this)"> Muchas veces
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="6" name="p3" onclick="respuesta_emocional(3,this)"> Todos los dias
+                            </label>
+                    </section>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#itemCarrusel-2">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#itemCarrusel-4">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-4">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-4">
+                    <section class="colortest1" id="p4"> 
+                        <h2>4.  Siento que puedo entender fácilmente a mis compañeros de trabajo</h2>
+                            <label class="label1">
+                                <input type="radio" value="0" name="p4" onclick="respuesta_personal(4,this)"> Nunca 
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="1" name="p4" onclick="respuesta_personal(4,this)"> Pocas veces
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="2" name="p4" onclick="respuesta_personal(4,this)"> Una vez al mes o menos 
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="3" name="p4" onclick="respuesta_personal(4,this)"> Algunas veces al mes
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="4" name="p4" onclick="respuesta_personal(4,this)"> Una vez a la semana
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="5" name="p4" onclick="respuesta_personal(4,this)"> Muchas veces
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="6" name="p4" onclick="respuesta_personal(4,this)"> Todos los dias
+                            </label>
+                    </section>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#itemCarrusel-3">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#itemCarrusel-5">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-5">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-5">
+                    <section class="colortest2" id="p5"> 
+                        <h2>5.  Siento que estoy tratando a  mis colegas de trabajo como objetos impersonales</h2>
+                            <label class="label2">
+                                <input type="radio" value="0" name="p5" onclick="respuesta_desper(5,this)"> Nunca
+                            </label>
+                            <label class="label2">
+                                 <input type="radio" value="1" name="p5" onclick="respuesta_desper(5,this)"> Pocas veces
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="2" name="p5" onclick="respuesta_desper(5,this)"> Una vez al mes o menos 
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="3" name="p5" onclick="respuesta_desper(5,this)"> Algunas veces al mes
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="4" name="p5" onclick="respuesta_desper(5,this)"> Una vez a la semana
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="5" name="p5" onclick="respuesta_desper(5,this)"> Muchas veces
+                            </label>
+                            <label class="label2">
+                                 <input type="radio" value="6" name="p5" onclick="respuesta_desper(5,this)"> Todos los dias
+                            </label>
+                    </section>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#itemCarrusel-4">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#itemCarrusel-6">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-6">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-6">
+                    <section class="colortest3" id="p6"> 
+                        <h2>6.  Siento que trabajar todo el día con la gente me cansa</h2>
+                            <label class="label3">
+                                <input type="radio" value="0" name="p6" onclick="respuesta_emocional(6,this)" > Nunca 
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="1" name="p6" onclick="respuesta_emocional(6,this)" > Pocas veces
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="2" name="p6" onclick="respuesta_emocional(6,this)" > Una vez al mes o menos
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="3" name="p6" onclick="respuesta_emocional(6,this)" > Algunas veces al mes
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="4" name="p6" onclick="respuesta_emocional(6,this)" > Una vez a la semana
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="5" name="p6" onclick="respuesta_emocional(6,this)" > Muchas veces
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="6" name="p6" onclick="respuesta_emocional(6,this)" > Todos los dias
+                            </label>
+                    </section>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#itemCarrusel-5">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#itemCarrusel-7">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-7">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-7">
+                    <section class="colortest1" id="p7"> 
+                        <h2>7.  Siento que trato con eficacia los problemas que ocurren en el trabajo</h2>
+                            <label class="label1">
+                                <input type="radio" value="0" name="p7" onclick="respuesta_personal (7,this)"> Nunca 
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="1" name="p7" onclick="respuesta_personal (7,this)"> Pocas veces
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="2" name="p7" onclick="respuesta_personal (7,this)"> Una vez al mes o menos 
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="3" name="p7" onclick="respuesta_personal (7,this)"> Algunas veces al mes
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="4" name="p7" onclick="respuesta_personal (7,this)"> Una vez a la semana
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="5" name="p7" onclick="respuesta_personal (7,this)"> Muchas veces
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="6" name="p7" onclick="respuesta_personal (7,this)"> Todos los dias
+                            </label>
+                    </section>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#itemCarrusel-6">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#itemCarrusel-8">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-8">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-8">
+                    <section class="colortest2" id="p8"> 
+                        <h2>8.  Siento que mi trabajo me está desgastando </h2>
+                            <label class="label2">
+                                <input type="radio" value="0" name="p8" onclick="respuesta_emocional(8,this)" > Nunca
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="1" name="p8" onclick="respuesta_emocional(8,this)"  > Pocas veces
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="2" name="p8" onclick="respuesta_emocional(8,this)"  > Una vez al mes o menos 
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="3" name="p8" onclick="respuesta_emocional(8,this)" > Algunas veces al mes
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="4" name="p8" onclick="respuesta_emocional(8,this)" > Una vez a la semana
+                            </label>
+                           <label class="label2">
+                                <input type="radio" value="5" name="p8" onclick="respuesta_emocional(8,this)" > Muchas veces
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="6" name="p8" onclick="respuesta_emocional(8,this)" > Todos los dias
+                            </label>    
+                    </section>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#itemCarrusel-7">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#itemCarrusel-9">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-9">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-9">
+                    <section class="colortest3" id="p9"> 
+                        <h2>9.  Siento que estoy influyendo positivamente en la vida de otras personas a través de mi trabajo </h2>
+                            <label class="label3">
+                                <input type="radio" value="0" name="p9" onclick="respuesta_personal(9,this)" > Nunca 
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="1" name="p9" onclick="respuesta_personal(9,this)" > Pocas veces
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="2" name="p9" onclick="respuesta_personal(9,this)" > Una vez al mes o menos
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="3" name="p9" onclick="respuesta_personal(9,this)" > Algunas veces al mes
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="4" name="p9" onclick="respuesta_personal(9,this)" > Una vez a la semana
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="5" name="p9" onclick="respuesta_personal(9,this)" > Muchas veces
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="6" name="p9" onclick="respuesta_personal(9,this)" > Todos los dias
+                            </label>
+                    </section>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#itemCarrusel-8">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#itemCarrusel-10">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-10">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-10">
+                    <section class="colortest1" id="p10"> 
+                        <h2>10.  Siento que me he vuelto insensible</h2>
+                            <label class="label1">
+                                <input type="radio" value="0" name="p10" onclick="respuesta_desper(10,this)"> Nunca 
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="1" name="p10" onclick="respuesta_desper(10,this)"> Pocas veces
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="2" name="p10" onclick="respuesta_desper(10,this)"> Una vez al mes o menos 
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="3" name="p10" onclick="respuesta_desper(10,this)"> Algunas veces al mes
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="4" name="p10" onclick="respuesta_desper(10,this)"> Una vez a la semana
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="5" name="p10" onclick="respuesta_desper(10,this)"> Muchas veces
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="6" name="p10" onclick="respuesta_desper(10,this)"> Todos los dias
+                            </label>
+                    </section>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#itemCarrusel-9">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#itemCarrusel-11    ">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-11">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-11">
+                    <section class="colortest2" id="p11"> 
+                        <h2>11.  Me preocupa que este trabajo me este endureciendo emocionalmente </h2>
+                            <label class="label2">
+                                <input type="radio" value="0" name="p11" onclick="respuesta_desper(11,this)"> Nunca
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="1" name="p11" onclick="respuesta_desper(11,this)" > Pocas veces
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="2" name="p11" onclick="respuesta_desper(11,this)" > Una vez al mes o menos 
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="3" name="p11" onclick="respuesta_desper(11,this)"> Algunas veces al mes
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="4" name="p11" onclick="respuesta_desper(11,this)"> Una vez a la semana
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="5" name="p11" onclick="respuesta_desper(11,this)"> Muchas veces
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="6" name="p11" onclick="respuesta_desper(11,this)"> Todos los dias
+                            </label>  
+                    </section>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#itemCarrusel-10">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#itemCarrusel-12">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-12">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-12">
+                    <section class="colortest3" id="p12"> 
+                        <h2>12.  Me siento con mucha energía en mi trabajo</h2>
+                            <label class="label3">
+                                <input type="radio" value="0" name="p12" onclick="respuesta_personal(12,this)"> Nunca 
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="1" name="p12" onclick="respuesta_personal(12,this)"> Pocas veces
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="2" name="p12" onclick="respuesta_personal(12,this)"> Una vez al mes o menos
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="3" name="p12" onclick="respuesta_personal(12,this)"> Algunas veces al mes
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="4" name="p12" onclick="respuesta_personal(12,this)"> Una vez a la semana
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="5" name="p12" onclick="respuesta_personal(12,this)"> Muchas veces
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="6" name="p12" onclick="respuesta_personal(12,this)"> Todos los dias
+                            </label>
+                    </section>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#itemCarrusel-11">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#itemCarrusel-13">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-13">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-13">
+                    <section class="colortest1" id="p13"> 
+                        <h2>13.  Me siento frustrado por mi trabajo</h2>
+                            <label class="label1">
+                                <input type="radio" value="0" name="p13" onclick="respuesta_emocional(13,this)"> Nunca 
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="1" name="p13" onclick="respuesta_emocional(13,this)"> Pocas veces
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="2" name="p13" onclick="respuesta_emocional(13,this)"> Una vez al mes o menos 
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="3" name="p13" onclick="respuesta_emocional(13,this)"> Algunas veces al mes
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="4" name="p13" onclick="respuesta_emocional(13,this)"> Una vez a la semana
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="5" name="p13" onclick="respuesta_emocional(13,this)"> Muchas veces
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="6" name="p13" onclick="respuesta_emocional(13,this)"> Todos los dias
+                            </label>
+                    </section>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#itemCarrusel-12">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#itemCarrusel-14">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-14">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-14">
+                    <section class="colortest2" id="p14"> 
+                        <h2>14.  Creo que estoy trabajando demasiado</h2>
+                            <label class="label2">
+                                <input type="radio" value="0" name="p14" onclick="respuesta_emocional(14,this)"> Nunca
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="1" name="p14" onclick="respuesta_emocional(14,this)" > Pocas veces
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="2" name="p14" onclick="respuesta_emocional(14,this)" > Una vez al mes o menos 
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="3" name="p14" onclick="respuesta_emocional(14,this)"> Algunas veces al mes
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="4" name="p14" onclick="respuesta_emocional(14,this)"> Una vez a la semana
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="5" name="p14" onclick="respuesta_emocional(14,this)"> Muchas veces
+                            </label>
+                            <label class="label2">
+                               <input type="radio" value="6" name="p14" onclick="respuesta_emocional(14,this)"> Todos los dias
+                            </label>    
+                    </section>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#itemCarrusel-13">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#itemCarrusel-15">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-15">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-15">
+                    <section class="colortest3" id="p15"> 
+                        <h2>15.  Siento que realmente no me importa lo que le ocurre a mis compañeros de trabajo</h2>
+                            <label class="label3">
+                                <input type="radio" value="0" name="p15" onclick="respuesta_desper(15,this)"> Nunca 
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="1" name="p15" onclick="respuesta_desper(15,this)"> Pocas veces
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="2" name="p15" onclick="respuesta_desper(15,this)"> Una vez al mes o menos
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="3" name="p15" onclick="respuesta_desper(15,this)"> Algunas veces al mes
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="4" name="p15" onclick="respuesta_desper(15,this)"> Una vez a la semana
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="5" name="p15" onclick="respuesta_desper(15,this)">Muchas veces
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="6" name="p15" onclick="respuesta_desper(15,this)"> Todos los dias
+                            </label>
+                    </section>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#itemCarrusel-14">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#itemCarrusel-16">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-16">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-16">
+                    <section class="colortest1" id="p16"> 
+                        <h2>16. Siento que trabajar en contacto directo con mis colegas  me cansa </h2>
+                            <label class="label1">
+                                <input type="radio" value="0" name="p16" onclick="respuesta_emocional(16,this)"> Nunca 
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="1" name="p16" onclick="respuesta_emocional(16,this)"> Pocas veces
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="2" name="p16" onclick="respuesta_emocional(16,this)"> Una vez al mes o menos 
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="3" name="p16" onclick="respuesta_emocional(16,this)"> Algunas veces al mes
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="4" name="p16" onclick="respuesta_emocional(16,this)"> Una vez a la semana
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="5" name="p16" onclick="respuesta_emocional(16,this)"> Muchas veces
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="6" name="p16" onclick="respuesta_emocional(16,this)"> Todos los dias
+                            </label>
+                    </section>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#itemCarrusel-15">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#itemCarrusel-17">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-17">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-17">
+                    <section class="colortest2" id="p17"> 
+                        <h2>17. Siento que puedo crear con facilidad un clima agradable con mis compañeros de trabajo</h2>
+                            <label class="label2">
+                                <input type="radio" value="0" name="p17" onclick="respuesta_personal(17,this)"> Nunca
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="1" name="p17" onclick="respuesta_personal(17,this)" > Pocas veces
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="2" name="p17" onclick="respuesta_personal(17,this)" > Una vez al mes o menos 
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="3" name="p17" onclick="respuesta_personal(17,this)"> Algunas veces al mes
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="4" name="p17" onclick="respuesta_personal(17,this)"> Una vez a la semana
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="5" name="p17" onclick="respuesta_personal(17,this)"> Muchas veces
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="6" name="p17" onclick="respuesta_personal(17,this)"> Todos los dias
+                            </label>
+                    </section>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#itemCarrusel-16">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#itemCarrusel-18">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-18">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-18">
+                    <section class="colortest3" id="p18"> 
+                        <h2>18. Me siento estimado después de haber trabajado con mis colegas </h2>
+                            <label class="label3">
+                                <input type="radio" value="0" name="p18" onclick="respuesta_personal(18,this)"> Nunca 
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="1" name="p18" onclick="respuesta_personal(18,this)"> Pocas veces
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="2" name="p18" onclick="respuesta_personal(18,this)"> Una vez al mes o menos
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="3" name="p18" onclick="respuesta_personal(18,this)"> Algunas veces al mes
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="4" name="p18" onclick="respuesta_personal(18,this)"> Una vez a la semana
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="5" name="p18" onclick="respuesta_personal(18,this)"> Muchas veces
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="6" name="p18" onclick="respuesta_personal(18,this)"> Todos los dias
+                            </label>
+                    </section>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#itemCarrusel-17">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#itemCarrusel-19">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-19">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-19">
+                    <section class="colortest1" id="p19"> 
+                        <h2>19. Creo que consigo muchas cosas valiosas con este trabajo</h2>
+                            <label class="label1">
+                                <input type="radio" value="0" name="p19" onclick="respuesta_personal(19,this)"> Nunca 
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="1" name="p19" onclick="respuesta_personal(19,this)"> Pocas veces
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="2" name="p19" onclick="respuesta_personal(19,this)"> Una vez al mes o menos 
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="3" name="p19" onclick="respuesta_personal(19,this)"> Algunas veces al mes
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="4" name="p19" onclick="respuesta_personal(19,this)"> Una vez a la semana
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="5" name="p19" onclick="respuesta_personal(19,this)"> Muchas veces
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="6" name="p19" onclick="respuesta_personal(19,this)"> Todos los dias
+                            </label>
+                    </section>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#itemCarrusel-18">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#itemCarrusel-20">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-20">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-20">
+                    <section class="colortest2" id="p20"> 
+                        <h2>20. Me siento como si estuviera al límite de mis posibilidades</h2>
+                            <label class="label2">
+                                <input type="radio" value="0" name="p20" onclick="respuesta_emocional(20,this)"> Nunca
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="1" name="p20" onclick="respuesta_emocional(20,this)" > Pocas veces
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="2" name="p20" onclick="respuesta_emocional(20,this)" > Una vez al mes o menos 
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="3" name="p20" onclick="respuesta_emocional(20,this)"> Algunas veces al mes
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="4" name="p20" onclick="respuesta_emocional(20,this)"> Una vez a la semana
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="5" name="p20" onclick="respuesta_emocional(20,this)"> Muchas veces
+                            </label>
+                            <label class="label2">
+                                <input type="radio" value="6" name="p20" onclick="respuesta_emocional(20,this)"> Todos los dias
+                            </label>
+                    </section>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#itemCarrusel-19">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#itemCarrusel-21">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-21">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-21">
+                    <section class="colortest3" id="p21"> 
+                        <h2>21. Siento que en mi trabajo los problemas emocionales son tratados de forma adecuada</h2>
+                            <label class="label3">
+                                <input type="radio" value="0" name="p21" onclick="respuesta_personal(21,this)"> Nunca 
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="1" name="p21" onclick="respuesta_personal(21,this)"> Pocas veces
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="2" name="p21" onclick="respuesta_personal(21,this)"> Una vez al mes o menos
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="3" name="p21" onclick="respuesta_personal(21,this)"> Algunas veces al mes
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="4" name="p21" onclick="respuesta_personal(21,this)"> Una vez a la semana
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="5" name="p21" onclick="respuesta_personal(21,this)"> Muchas veces
+                            </label>
+                            <label class="label3">
+                                <input type="radio" value="6" name="p21" onclick="respuesta_personal(21,this)"> Todos los dias
+                            </label>
+                    </section>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#itemCarrusel-20">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#itemCarrusel-22">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-22">
+                <div class="tarjetacarrusel" id="tarjetacarrusel-22">
+                    <section class="colortest1" id="p22"> 
+                        <h2>22. Me parece que mis colegas me culpan por algunos de sus problemas</h2>
+                            <label class="label1">
+                               <input type="radio" value="0" name="p22" onclick="respuesta_desper(22,this)"> Nunca 
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="1" name="p22" onclick="respuesta_desper(22,this)"> Pocas veces
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="2" name="p22" onclick="respuesta_desper(22,this)"> Una vez al mes o menos 
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="3" name="p22" onclick="respuesta_desper(22,this)"> Algunas veces al mes
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="4" name="p22" onclick="respuesta_desper(22,this)"> Una vez a la semana
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="5" name="p22" onclick="respuesta_desper(22,this)"> Muchas veces
+                            </label>
+                            <label class="label1">
+                                <input type="radio" value="6" name="p22" onclick="respuesta_desper(22,this)"> Todos los dias
+                            </label>
+                    </section>
+                </div>
+                <div class="flechascarrusel">
+                    <a href="#itemCarrusel-21">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#itemCarrusel-1">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="Finalizar">
+            <a id="button" href="/test/valores/valore.html" onclick="corregir()">Finalizar Test</a>
+        </div>
+    </body>
+</html>
